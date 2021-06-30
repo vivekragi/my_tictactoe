@@ -37,15 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tictactoe_app',  # apps that we are creating
+    'social_django',
     'core'
 ]
 
 #add this
 AUTHENTICATION_BACKENDS = [
-    'tictactoe_app.backends.linkedin.LinkedinOAuth2',
-    'tictactoe_app.backends.instagram.InstagramOAuth2',
-    'tictactoe_app.backends.facebook.FacebookOAuth2',
+    'social_core.backends.linkedin.LinkedinOAuth2',
+    'social_core.backends.instagram.InstagramOAuth2',
+    'social_core.backends.facebook.FacebookOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 ]
 
